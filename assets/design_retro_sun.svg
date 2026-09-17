@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <circle cx="100" cy="100" r="60" fill="#FF5E3A" />
+  <circle cx="100" cy="100" r="50" fill="#FF9500" />
+  <circle cx="100" cy="100" r="40" fill="#FFCC00" />
+  <!-- Rays -->
+  <g stroke="#FF5E3A" stroke-width="4" stroke-linecap="round">
+    <line x1="100" y1="25" x2="100" y2="10" />
+    <line x1="100" y1="175" x2="100" y2="190" />
+    <line x1="25" y1="100" x2="10" y2="100" />
+    <line x1="175" y1="100" x2="190" y2="100" />
+    <line x1="47" y1="47" x2="36" y2="36" />
+    <line x1="153" y1="153" x2="164" y2="164" />
+    <line x1="47" y1="153" x2="36" y2="164" />
+    <line x1="153" y1="47" x2="164" y2="36" />
+  </g>
+  <!-- Text along path or simple overlay -->
+  <text x="100" y="105" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">RETRO SOUL</text>
+</svg>

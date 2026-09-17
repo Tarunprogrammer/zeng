@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Definitions for gradients/shadows -->
+  <defs>
+    <!-- Realistic drop shadow for the shirt -->
+    <filter id="drop-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+
+    <!-- Overlay shading to give 3D texture and folds -->
+    <linearGradient id="sleeve-left-shading" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.15"/>
+    </linearGradient>
+    
+    <linearGradient id="sleeve-right-shading" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <linearGradient id="body-shading" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="10%" stop-color="#000000" stop-opacity="0.0"/>
+      <stop offset="90%" stop-color="#000000" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.2"/>
+    </linearGradient>
+    
+    <radialGradient id="neck-shadow" cx="50%" cy="15%" r="35%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Group containing the whole shirt -->
+  <g filter="url(#drop-shadow)">
+    <!-- Base Shirt Shape - Color will be set dynamically via JS/CSS -->
+    <path id="tshirt-base" class="tshirt-fillable" 
+          d="M 210,60 C 225,75 275,75 290,60 L 375,95 C 385,99 415,140 430,200 L 380,225 C 375,227 370,222 368,217 L 350,185 L 350,440 C 350,446 345,450 338,450 L 162,450 C 155,450 150,446 150,440 L 150,185 L 132,217 C 130,222 125,227 120,225 L 70,200 C 85,140 115,99 125,95 Z" 
+          fill="#ffffff" />
+          
+    <!-- Realistic shadow overlay for wrinkles and folds -->
+    <path d="M 210,60 C 225,75 275,75 290,60 L 375,95 C 385,99 415,140 430,200 L 380,225 C 375,227 370,222 368,217 L 350,185 L 350,440 C 350,446 345,450 338,450 L 162,450 C 155,450 150,446 150,440 L 150,185 L 132,217 C 130,222 125,227 120,225 L 70,200 C 85,140 115,99 125,95 Z" 
+          fill="url(#body-shading)" />
+
+    <!-- Neck Inner / Back Collar -->
+    <path d="M 210,60 C 225,72 275,72 290,60 C 285,50 215,50 210,60 Z" fill="#e0e0e0" opacity="0.8"/>
+    <path d="M 210,60 C 225,72 275,72 290,60 C 280,68 220,68 210,60 Z" fill="url(#neck-shadow)"/>
+
+    <!-- Left Sleeve Shading Overlay -->
+    <path d="M 125,95 L 70,200 L 120,225 L 150,185 Z" fill="url(#sleeve-left-shading)" style="mix-blend-mode: multiply;"/>
+
+    <!-- Right Sleeve Shading Overlay -->
+    <path d="M 375,95 L 430,200 L 380,225 L 350,185 Z" fill="url(#sleeve-right-shading)" style="mix-blend-mode: multiply;"/>
+
+    <!-- Ribbed Collar Neckline Stitching -->
+    <path d="M 210,60 C 225,75 275,75 290,60" fill="none" stroke="#000000" stroke-width="1.5" stroke-opacity="0.15" />
+    <path d="M 207,59 C 225,77 275,77 293,59" fill="none" stroke="#000000" stroke-width="1.0" stroke-dasharray="3,3" stroke-opacity="0.25" />
+
+    <!-- Sleeve Hems / Cuff Stitching Lines -->
+    <path d="M 75,190 L 115,210" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="2,2" stroke-opacity="0.25"/>
+    <path d="M 385,210 L 425,190" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="2,2" stroke-opacity="0.25"/>
+
+    <!-- Bottom Hem Stitching Line -->
+    <path d="M 155,442 L 345,442" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="3,3" stroke-opacity="0.2"/>
+    <path d="M 155,445 L 345,445" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="3,3" stroke-opacity="0.2"/>
+
+    <!-- Folds & Fabric Wrinkles (Fine details for realism) -->
+    <!-- Armpit left crease -->
+    <path d="M 150,195 C 170,210 180,215 190,210" fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.08" filter="blur(1px)"/>
+    <!-- Armpit right crease -->
+    <path d="M 350,195 C 330,210 320,215 310,210" fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.08" filter="blur(1px)"/>
+    <!-- Bottom wrinkles -->
+    <path d="M 160,430 C 180,420 200,435 220,430" fill="none" stroke="#000000" stroke-width="2.5" stroke-opacity="0.06" filter="blur(1px)"/>
+    <path d="M 340,430 C 320,420 300,435 280,430" fill="none" stroke="#000000" stroke-width="2.5" stroke-opacity="0.06" filter="blur(1px)"/>
+    <!-- Waist fold -->
+    <path d="M 150,300 C 180,310 200,295 220,305" fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.05" filter="blur(1.5px)"/>
+    <path d="M 350,320 C 320,310 300,325 280,315" fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.05" filter="blur(1.5px)"/>
+  </g>
+</svg>

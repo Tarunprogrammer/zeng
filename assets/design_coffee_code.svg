@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Coffee Cup Outline -->
+  <path d="M 60,80 L 140,80 C 140,80 140,130 100,130 C 60,130 60,80 60,80 Z" fill="#6F4E37" />
+  <!-- Plate -->
+  <path d="M 50,140 L 150,140 C 160,140 160,146 150,146 L 50,146 C 40,146 40,140 50,140 Z" fill="#5C4033" />
+  <!-- Handle -->
+  <path d="M 140,90 C 160,90 160,115 140,115" fill="none" stroke="#6F4E37" stroke-width="6" stroke-linecap="round" />
+  
+  <!-- Steam (Code brackets stylized as steam) -->
+  <path d="M 80,65 Q 75,50 80,35" fill="none" stroke="#A59D95" stroke-width="3" stroke-linecap="round" />
+  <path d="M 100,70 Q 95,50 100,30" fill="none" stroke="#A59D95" stroke-width="3" stroke-linecap="round" />
+  <path d="M 120,65 Q 115,50 120,35" fill="none" stroke="#A59D95" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- Code Symbol on the cup -->
+  <text x="100" y="112" font-family="Courier New, monospace" font-weight="900" font-size="20" fill="#FFFFFF" text-anchor="middle">&lt;/&gt;</text>
+  
+  <!-- Typography -->
+  <text x="100" y="175" font-family="'Outfit', 'Inter', sans-serif" font-weight="800" font-size="12" fill="#3E2723" text-anchor="middle" letter-spacing="1">COFFEE &amp; CODE</text>
+</svg>

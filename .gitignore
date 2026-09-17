@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+serviceAccountKey.json
+*.pem
+*.key
+*.p12
+*.log
+vendor/
+nbproject/
